@@ -63,7 +63,7 @@
 # 1. Клонировать репозиторий и перейти в папку
 cd guardrails-chatbot
 
-# 2. Создать виртуальное окружение (рекомендуется)
+# 2. Создать виртуальное окружение 
 python -m venv .venv
 # Windows:
 .venv\Scripts\activate
@@ -77,8 +77,6 @@ pip install -r requirements.txt
 copy .env.example .env
 # Укажите OPENAI_API_KEY в .env
 ```
-
-Без API-ключа проект работает в **демо-режиме** — подходит для скринкаста и проверки guardrails.
 
 ## Запуск
 
@@ -139,14 +137,6 @@ python experiments/test_guardrails.py
 
 Подробный разбор экспериментов, метрик и выводов — в [docs/ANALYSIS.md](docs/ANALYSIS.md).
 
-## Сдача проекта
-
-| Артефакт | Где |
-|----------|-----|
-| GitHub-репозиторий | этот репозиторий |
-| Скринкаст | запуск Streamlit + тестовые сценарии из sidebar |
-| Видеопрезентация | архитектура, демо, выводы из ANALYSIS.md |
-
 ## Технологии
 
 - Python 3.10+
@@ -154,6 +144,4 @@ python experiments/test_guardrails.py
 - OpenAI API (опционально)
 - regex-эвристики для guardrails
 
-## Автор
 
-Финальный проект курса по AI / LLM Engineering.
